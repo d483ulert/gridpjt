@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Home Page</title>
+<title>All Member</title>
 </head>
 <body>
-   location.href = "member.jsp";
+
+All Member
 
 </body>
 </html>
