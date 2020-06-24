@@ -22,6 +22,24 @@ select * fromm board where bno > 0
 
 </insert>
 
+<select id="read" resultType="ocom.my.gridpjt.domain.BoardVO">
+	select * from Board where bno = #{bn
+	
+	o}
+</select>
+
+<delete id="delete">
+	delete from board where bno = #{bno}
+</delete>
+
+<update id="update">
+	update board set title =#{title},
+	content =#{content},
+	writer =#{writer},
+	updateDate = sysdate,
+	where bno =#{bno}
+</update>
+
 
 
 </mapper>
