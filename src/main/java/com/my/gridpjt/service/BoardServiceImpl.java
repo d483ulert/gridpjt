@@ -14,7 +14,7 @@ import lombok.extern.log4j.Log4j;
 @AllArgsConstructor
 @Log4j
 @Service
-public class BoardServiceImpl {
+public class BoardServiceImpl implements BoardService {
 
 	@Autowired
 	private BoardMapper mapper;
@@ -35,4 +35,10 @@ public class BoardServiceImpl {
 	public boolean modify(BoardVO board) {
 		return mapper.update(board)==1;
 	}
+	@Override
+	public BoardVO get(Long bno) {
+		return mapper.read(bno);
+	}
+
+	
 }
