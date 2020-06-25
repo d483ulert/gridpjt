@@ -6,8 +6,7 @@
 <meta charset="UTF-8">
 <title>Home Page</title>
 </head>
-<body>
-   location.href = "list.jsp";
+<body>sgsg
 
 </body>
 </html>
