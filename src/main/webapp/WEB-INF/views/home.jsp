@@ -7,7 +7,7 @@
 <title>Home Page</title>
 </head>
 <body>
-   location.href = "member.jsp";
+   location.href = "list.jsp";
 
 </body>
 </html>
