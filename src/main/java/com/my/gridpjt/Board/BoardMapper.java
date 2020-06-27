@@ -1,8 +1,10 @@
 package com.my.gridpjt.Board;
 
 import java.util.List;
+import org.springframework.stereotype.Repository;
 import com.my.gridpjt.domain.BoardVO;
 
+@Repository
 public interface BoardMapper {
 
 	//insert
