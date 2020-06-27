@@ -22,9 +22,7 @@ select * fromm board where bno > 0
 </insert>
 
 <select id="read" resultType="ocom.my.gridpjt.domain.BoardVO">
-	select * from Board where bno = #{bn
-	
-	o}
+	select * from Board where bno = #{bno}
 </select>
 
 <delete id="delete">
