@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
@@ -14,18 +14,15 @@ select * fromm board where bno > 0
 </insert>
 
 <insert id="insertSelectKey">
-<selectKey keyProperty="bno",order="BEFORE" reseultType="long">
-	select seq_board.nextval from dual
-</selectKey>
-	insert into board(bno,title,content,writer) 
-	values(seq_board.nextval, #{title},#{content},#{writer})
-
+	<selectKey keyProperty="bno" order="BEFORE" resultType="long">
+		select seq_board.nextval from dual
+	</selectKey>
+		insert into board(bno,title,content,writer) 
+		values(seq_board.nextval, #{title},#{content},#{writer})
 </insert>
 
 <select id="read" resultType="ocom.my.gridpjt.domain.BoardVO">
-	select * from Board where bno = #{bn
-	
-	o}
+	select * from Board where bno = #{bno}
 </select>
 
 <delete id="delete">
