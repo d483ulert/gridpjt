@@ -8,15 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
-import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
 
-@AllArgsConstructor
 @Log4j
 @Service
 public class BoardServiceImpl implements BoardService {
 
-	@Autowired(required=true)
+	@Autowired
 	private BoardMapper mapper;
 	
 	@Override
