@@ -1,4 +1,4 @@
-package com.my.gridpjt.Board;
+package com.my.gridpjt.board;
 
 import java.util.List;
 

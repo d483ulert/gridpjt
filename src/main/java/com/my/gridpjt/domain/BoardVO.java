@@ -2,7 +2,6 @@ package com.my.gridpjt.domain;
 import java.util.Date;
 
 
-
 public class BoardVO {
 
 	public Long getBno() {
