@@ -21,7 +21,7 @@ select * fromm board where bno > 0
 		values(seq_board.nextval, #{title},#{content},#{writer})
 </insert>
 
-<select id="read" resultType="ocom.my.gridpjt.domain.BoardVO">
+<select id="read" resultType="com.my.gridpjt.domain.BoardVO">
 	select * from Board where bno = #{bno}
 </select>
 
